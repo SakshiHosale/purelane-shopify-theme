@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "purelane_original_homepage": {
+      "type": "purelane-original-homepage",
+      "settings": {}
+    }
+  },
+  "order": [
+    "purelane_original_homepage"
+  ]
+}

@@ -1,0 +1,821 @@
+<section class="purelane-hero">
+
+  <div class="purelane-hero__overlay"></div>
+
+  <div class="purelane-hero__container">
+
+    <div class="purelane-hero__content">
+
+      <p class="purelane-hero__eyebrow">
+        PURELANE
+      </p>
+
+      <div class="purelane-hero__rule">
+        <span></span>
+        <i>✦</i>
+        <span></span>
+      </div>
+
+      <h1>
+        A cleaner home,<br>
+        made simple.
+      </h1>
+
+      <p class="purelane-hero__text">
+        Effective cleaning products designed for everyday living.
+      </p>
+
+      <div class="purelane-hero__buttons">
+
+        <a
+          href="{{ section.settings.button_link }}"
+          class="purelane-hero__button purelane-hero__button--primary"
+        >
+          {{ section.settings.button_label }}
+        </a>
+
+        <a
+          href="#shop"
+          class="purelane-hero__button purelane-hero__button--secondary"
+        >
+          Explore products
+        </a>
+
+      </div>
+
+      <div class="purelane-hero__trust">
+
+        <div>
+          <strong>✓</strong>
+          No harsh chemicals
+        </div>
+
+        <div>
+          <strong>✓</strong>
+          Free shipping
+        </div>
+
+        <div>
+          <strong>✓</strong>
+          Everyday safe
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT VISUAL -->
+
+    <div class="purelane-hero__product">
+
+      <div class="purelane-product-stage">
+
+        <!-- Main bottle -->
+        <div class="purelane-bottle purelane-bottle--main">
+
+          <div class="purelane-bottle__cap"></div>
+
+          <div class="purelane-bottle__body">
+
+            <div class="purelane-bottle__label">
+
+              <small>PURELANE</small>
+
+              <strong>
+                FOAMING<br>
+                KITCHEN
+              </strong>
+
+              <span>
+                CLEANER
+              </span>
+
+              <em>
+                500 ml
+              </em>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Price card -->
+
+        <div class="purelane-price-card">
+
+          <span>Single bottle</span>
+
+          <div>
+            <strong>₹499</strong>
+            <s>₹599</s>
+          </div>
+
+          <small>Best everyday clean</small>
+
+        </div>
+
+      </div>
+
+      <div class="purelane-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+.purelane-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(75, 58, 143, .28),
+      transparent 38%
+    ),
+    linear-gradient(
+      120deg,
+      #023c39 0%,
+      #063f3b 45%,
+      #17202c 100%
+    );
+
+  color: #faf7fd;
+}
+
+
+.purelane-hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      100deg,
+      rgba(1,45,42,.85) 0%,
+      rgba(1,45,42,.58) 35%,
+      rgba(1,45,42,.12) 70%,
+      transparent 100%
+    );
+
+  pointer-events: none;
+}
+
+
+.purelane-hero__container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1180px;
+  min-height: 720px;
+
+  margin: 0 auto;
+  padding: 90px 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* LEFT */
+
+.purelane-hero__content {
+  max-width: 570px;
+}
+
+
+.purelane-hero__eyebrow {
+  margin: 0 0 15px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .22em;
+
+  color: #f0a03c;
+}
+
+
+.purelane-hero__rule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  max-width: 230px;
+  margin-bottom: 20px;
+}
+
+
+.purelane-hero__rule span {
+  height: 1px;
+  flex: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(236,230,247,.42),
+      transparent
+    );
+}
+
+
+.purelane-hero__rule i {
+  font-style: normal;
+  color: #f0a03c;
+}
+
+
+.purelane-hero h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: .96;
+  letter-spacing: -.045em;
+  font-weight: 800;
+
+  text-shadow:
+    0 12px 40px rgba(0,0,0,.28);
+}
+
+
+.purelane-hero__text {
+  max-width: 510px;
+
+  margin: 25px 0 0;
+
+  font-size: 17px;
+  line-height: 1.65;
+
+  color: rgba(236,230,247,.76);
+}
+
+
+.purelane-hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+
+  margin-top: 28px;
+}
+
+
+.purelane-hero__button {
+  min-height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 22px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: .12em;
+  text-transform: uppercase;
+
+  transition: .3s ease;
+}
+
+
+.purelane-hero__button:hover {
+  transform: translateY(-2px);
+}
+
+
+.purelane-hero__button--primary {
+  background:
+    linear-gradient(
+      135deg,
+      #f0a03c,
+      #c9761d
+    );
+
+  color: #17202c;
+}
+
+
+.purelane-hero__button--secondary {
+  border: 1px solid rgba(236,230,247,.28);
+
+  background: rgba(236,230,247,.08);
+
+  color: #faf7fd;
+}
+
+
+.purelane-hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  margin-top: 30px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: rgba(236,230,247,.62);
+}
+
+
+.purelane-hero__trust strong {
+  margin-right: 5px;
+  color: #f0a03c;
+}
+
+
+/* PRODUCT AREA */
+
+.purelane-hero__product {
+  min-height: 570px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+
+.purelane-product-stage {
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/* BOTTLE */
+
+.purelane-bottle {
+  position: relative;
+
+  width: 230px;
+  height: 430px;
+
+  filter:
+    drop-shadow(
+      0 35px 35px rgba(0,0,0,.42)
+    );
+
+  transform: translateY(5px);
+}
+
+
+.purelane-bottle__cap {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 72px;
+  height: 65px;
+
+  border-radius: 17px 17px 8px 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #5b8c2c,
+      #7aa84c,
+      #4c7b27
+    );
+
+  box-shadow:
+    inset 0 4px 5px rgba(255,255,255,.18);
+}
+
+
+.purelane-bottle__body {
+  position: absolute;
+
+  left: 20px;
+  right: 20px;
+  top: 48px;
+  bottom: 0;
+
+  border-radius:
+    38px 38px 28px 28px;
+
+  background:
+    linear-gradient(
+      105deg,
+      #5d8d31 0%,
+      #7aa84c 30%,
+      #4d7d29 70%,
+      #315c20 100%
+    );
+
+  box-shadow:
+    inset 12px 0 20px rgba(255,255,255,.08),
+    inset -12px 0 20px rgba(0,0,0,.16);
+}
+
+
+.purelane-bottle__body::before {
+  content: "";
+
+  position: absolute;
+
+  left: 18px;
+  top: 16px;
+
+  width: 28px;
+  height: 76%;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.16),
+      transparent
+    );
+}
+
+
+.purelane-bottle__label {
+  position: absolute;
+
+  left: 22px;
+  right: 22px;
+  top: 110px;
+
+  min-height: 190px;
+
+  padding: 25px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #faf7fd,
+      #ece6f7
+    );
+
+  color: #17202c;
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.14);
+}
+
+
+.purelane-bottle__label small {
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: .18em;
+
+  color: #c9761d;
+}
+
+
+.purelane-bottle__label strong {
+  margin-top: 13px;
+
+  font-size: 24px;
+  line-height: .95;
+
+  letter-spacing: -.03em;
+}
+
+
+.purelane-bottle__label span {
+  margin-top: 10px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.purelane-bottle__label em {
+  margin-top: 20px;
+
+  font-size: 8px;
+  font-style: normal;
+  letter-spacing: .12em;
+
+  color: #777;
+}
+
+
+/* PRICE CARD */
+
+.purelane-price-card {
+  position: absolute;
+
+  left: 5%;
+  bottom: 8%;
+
+  z-index: 5;
+
+  padding: 14px 17px;
+
+  min-width: 160px;
+
+  border-radius: 17px;
+
+  background:
+    rgba(236,230,247,.10);
+
+  border:
+    1px solid rgba(236,230,247,.20);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.15);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+
+.purelane-price-card > span {
+  display: block;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: .16em;
+  text-transform: uppercase;
+
+  color: #f0a03c;
+}
+
+
+.purelane-price-card div {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+
+  margin-top: 5px;
+}
+
+
+.purelane-price-card strong {
+  font-size: 23px;
+  color: #fff;
+}
+
+
+.purelane-price-card s {
+  font-size: 12px;
+  color: rgba(236,230,247,.48);
+}
+
+
+.purelane-price-card small {
+  display: block;
+
+  margin-top: 6px;
+
+  font-size: 8px;
+
+  letter-spacing: .08em;
+  text-transform: uppercase;
+
+  color: rgba(236,230,247,.58);
+}
+
+
+/* DOTS */
+
+.purelane-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+
+  margin-top: 4px;
+}
+
+
+.purelane-dots span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 999px;
+
+  background: rgba(236,230,247,.28);
+}
+
+
+.purelane-dots .active {
+  width: 20px;
+
+  background: #f0a03c;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 900px) {
+
+  .purelane-hero {
+    min-height: auto;
+  }
+
+  .purelane-hero__container {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding:
+      70px 18px
+      45px;
+
+    text-align: center;
+  }
+
+  .purelane-hero__content {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .purelane-hero__rule {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .purelane-hero__text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .purelane-hero__buttons {
+    justify-content: center;
+  }
+
+  .purelane-hero__trust {
+    justify-content: center;
+  }
+
+  .purelane-hero__product {
+    min-height: 430px;
+  }
+
+  .purelane-product-stage {
+    height: 400px;
+  }
+
+  .purelane-bottle {
+    width: 190px;
+    height: 355px;
+  }
+
+  .purelane-bottle__label {
+    top: 90px;
+    min-height: 155px;
+  }
+
+  .purelane-bottle__label strong {
+    font-size: 20px;
+  }
+
+  .purelane-price-card {
+    left: 8%;
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .purelane-hero__container {
+    padding-top: 55px;
+  }
+
+  .purelane-hero h1 {
+    font-size: 45px;
+  }
+
+  .purelane-hero__text {
+    font-size: 15px;
+  }
+
+  .purelane-hero__trust {
+    gap: 10px;
+    font-size: 9px;
+  }
+
+  .purelane-hero__product {
+    min-height: 370px;
+  }
+
+  .purelane-product-stage {
+    height: 340px;
+  }
+
+  .purelane-bottle {
+    width: 160px;
+    height: 300px;
+  }
+
+  .purelane-bottle__cap {
+    width: 52px;
+    height: 48px;
+  }
+
+  .purelane-bottle__body {
+    left: 14px;
+    right: 14px;
+    top: 36px;
+  }
+
+  .purelane-bottle__label {
+    left: 16px;
+    right: 16px;
+    top: 72px;
+    min-height: 125px;
+    padding: 15px 8px;
+  }
+
+  .purelane-bottle__label strong {
+    font-size: 16px;
+  }
+
+  .purelane-price-card {
+    left: 1%;
+    bottom: 4%;
+    transform: scale(.9);
+    transform-origin: left bottom;
+  }
+
+}
+
+</style>
+
+
+{% schema %}
+{
+  "name": "Purelane Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Purelane"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A cleaner home, made simple."
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Description",
+      "default": "<p>Effective cleaning products designed for everyday living.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Purelane Hero"
+    }
+  ]
+}
+{% endschema %}

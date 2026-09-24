@@ -1,0 +1,534 @@
+<section class="purelane-bundles" id="bundles">
+  <div class="purelane-bundles__wrap">
+
+    <div class="purelane-bundles__intro">
+      <span class="purelane-bundles__kicker">Build your bundle</span>
+
+      <h2>One box. Every room.</h2>
+
+      <p>
+        Mix and match across kitchen, bathroom, laundry and everyday home care.
+          One flat price, no code needed, free shipping either way.
+      </p>
+    </div>
+
+    <div class="purelane-bundles__grid">
+
+      <!-- STARTER -->
+      <article class="purelane-tier">
+
+        <span class="purelane-tier__tag">Starter</span>
+
+        <div class="purelane-tier__products">
+          {% assign product_1 = collections.all.products[0] %}
+          {% assign product_2 = collections.all.products[1] %}
+
+          {% if product_1.featured_image %}
+            {{
+              product_1.featured_image
+              | image_url: width: 140
+              | image_tag:
+                loading: 'lazy',
+                alt: product_1.title
+            }}
+          {% endif %}
+
+          {% if product_2.featured_image %}
+            {{
+              product_2.featured_image
+              | image_url: width: 140
+              | image_tag:
+                loading: 'lazy',
+                alt: product_2.title
+            }}
+          {% endif %}
+        </div>
+
+        <div class="purelane-tier__qty">
+          2
+          <small>Products</small>
+        </div>
+
+        <div class="purelane-tier__price">
+          ₹349
+          <s>₹598</s>
+        </div>
+
+        <p class="purelane-tier__per">
+          Flat ₹174 per product
+        </p>
+
+        <ul>
+          <li>✓ Pick any two products</li>
+          <li>✓ Free shipping across India</li>
+        </ul>
+
+        <a href="#shop" class="purelane-tier__button">
+          Build this box
+        </a>
+
+      </article>
+
+
+      <!-- MOST POPULAR -->
+      <article class="purelane-tier purelane-tier--best">
+
+        <span class="purelane-tier__tag">
+          Most popular
+        </span>
+
+        <div class="purelane-tier__products">
+
+          {% assign product_1 = collections.all.products[0] %}
+          {% assign product_2 = collections.all.products[1] %}
+          {% assign product_3 = collections.all.products[4] %}
+
+          {% if product_1.featured_image %}
+            {{
+              product_1.featured_image
+              | image_url: width: 120
+              | image_tag:
+                loading: 'lazy',
+                alt: product_1.title
+            }}
+          {% endif %}
+
+          {% if product_2.featured_image %}
+            {{
+              product_2.featured_image
+              | image_url: width: 120
+              | image_tag:
+                loading: 'lazy',
+                alt: product_2.title
+            }}
+          {% endif %}
+
+          {% if product_3.featured_image %}
+            {{
+              product_3.featured_image
+              | image_url: width: 120
+              | image_tag:
+                loading: 'lazy',
+                alt: product_3.title
+            }}
+          {% endif %}
+
+        </div>
+
+        <div class="purelane-tier__qty">
+          3
+          <small>Products</small>
+        </div>
+
+        <div class="purelane-tier__price">
+          ₹499
+          <s>₹897</s>
+        </div>
+
+        <p class="purelane-tier__per">
+          Flat ₹166 per product
+        </p>
+
+        <ul>
+          <li>✓ Pick any three products</li>
+          <li>✓ Covers kitchen, bathroom and laundry</li>
+          <li>✓ Free shipping across India</li>
+        </ul>
+
+        <a href="#shop"
+           class="purelane-tier__button purelane-tier__button--primary">
+          Build this box →
+        </a>
+
+      </article>
+
+
+      <!-- WHOLE HOME -->
+      <article class="purelane-tier">
+
+        <span class="purelane-tier__tag">
+          Whole home
+        </span>
+
+        <div class="purelane-tier__products purelane-tier__products--five">
+
+          {% assign product_1 = collections.all.products[0] %}
+          {% assign product_2 = collections.all.products[1] %}
+          {% assign product_3 = collections.all.products[2] %}
+          {% assign product_4 = collections.all.products[3] %}
+          {% assign product_5 = collections.all.products[5] %}
+
+          {% if product_1.featured_image %}
+            {{
+              product_1.featured_image
+              | image_url: width: 100
+              | image_tag:
+                loading: 'lazy',
+                alt: product_1.title
+            }}
+          {% endif %}
+
+          {% if product_2.featured_image %}
+            {{
+              product_2.featured_image
+              | image_url: width: 100
+              | image_tag:
+                loading: 'lazy',
+                alt: product_2.title
+            }}
+          {% endif %}
+
+          {% if product_3.featured_image %}
+            {{
+              product_3.featured_image
+              | image_url: width: 100
+              | image_tag:
+                loading: 'lazy',
+                alt: product_3.title
+            }}
+          {% endif %}
+
+          {% if product_4.featured_image %}
+            {{
+              product_4.featured_image
+              | image_url: width: 100
+              | image_tag:
+                loading: 'lazy',
+                alt: product_4.title
+            }}
+          {% endif %}
+
+          {% if product_5.featured_image %}
+            {{
+              product_5.featured_image
+              | image_url: width: 100
+              | image_tag:
+                loading: 'lazy',
+                alt: product_5.title
+            }}
+          {% endif %}
+
+        </div>
+
+        <div class="purelane-tier__qty">
+          5
+          <small>Products</small>
+        </div>
+
+        <div class="purelane-tier__price">
+          ₹799
+          <s>₹1,495</s>
+        </div>
+
+        <p class="purelane-tier__per">
+          Flat ₹160 per product
+        </p>
+
+        <ul>
+          <li>✓ Pick any five products</li>
+          <li>✓ Complete home cleaning</li>
+          <li>✓ Free shipping across India</li>
+        </ul>
+
+        <a href="#shop" class="purelane-tier__button">
+          Build this box
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+
+.purelane-bundles {
+  padding: 80px 20px;
+  background:
+    linear-gradient(
+      180deg,
+      #023c39 0%,
+      #17202c 100%
+    );
+  color: #faf7fd;
+}
+
+.purelane-bundles__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.purelane-bundles__intro {
+  max-width: 720px;
+  margin: 0 auto 38px;
+  padding: 34px 28px;
+  text-align: center;
+
+  background: rgba(236,230,247,.08);
+  border: 1px solid rgba(236,230,247,.16);
+  border-radius: 26px;
+
+  box-shadow:
+    0 26px 74px rgba(18,12,34,.30),
+    inset 0 1px 0 rgba(255,255,255,.15);
+}
+
+.purelane-bundles__kicker {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #f0a03c;
+}
+
+.purelane-bundles__intro h2 {
+  margin: 12px 0;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: .95;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.purelane-bundles__intro p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(236,230,247,.72);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.purelane-bundles__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.purelane-tier {
+  padding: 24px 22px;
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      158deg,
+      rgba(236,230,247,.13),
+      rgba(75,58,143,.18) 58%,
+      rgba(23,16,43,.28)
+    );
+
+  border: 1px solid rgba(236,230,247,.20);
+
+  box-shadow:
+    0 26px 74px rgba(18,12,34,.38),
+    inset 0 1px 0 rgba(255,255,255,.18);
+
+  transition: .35s ease;
+}
+
+.purelane-tier:hover {
+  transform: translateY(-5px);
+}
+
+.purelane-tier--best {
+  border-color: rgba(240,160,60,.44);
+
+  box-shadow:
+    0 26px 74px rgba(18,12,34,.44),
+    0 0 0 1px rgba(240,160,60,.20),
+    inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+.purelane-tier__tag {
+  display: inline-block;
+
+  padding: 5px 11px;
+  margin-bottom: 14px;
+
+  border-radius: 999px;
+
+  background: rgba(240,160,60,.18);
+  border: 1px solid rgba(240,160,60,.34);
+
+  color: #f0a03c;
+
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.purelane-tier__products {
+  min-height: 105px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.purelane-tier__products img {
+  width: 85px;
+  height: 85px;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,.08);
+  padding: 6px;
+}
+
+.purelane-tier__products--five {
+  gap: 4px;
+}
+
+.purelane-tier__products--five img {
+  width: 55px;
+  height: 55px;
+}
+
+.purelane-tier__qty {
+  font-size: 52px;
+  line-height: .9;
+  font-weight: 800;
+  letter-spacing: -.03em;
+}
+
+.purelane-tier__qty small {
+  display: block;
+  margin-top: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+
+  color: rgba(236,230,247,.55);
+}
+
+.purelane-tier__price {
+  margin: 16px 0 4px;
+
+  font-size: 27px;
+  font-weight: 700;
+  color: #f0a03c;
+}
+
+.purelane-tier__price s {
+  margin-left: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(236,230,247,.48);
+}
+
+.purelane-tier__per {
+  margin: 0;
+  font-size: 12px;
+  color: rgba(236,230,247,.62);
+}
+
+.purelane-tier ul {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 20px;
+
+  display: grid;
+  gap: 9px;
+}
+
+.purelane-tier li {
+  font-size: 13px;
+  color: rgba(236,230,247,.76);
+}
+
+.purelane-tier__button {
+  width: 100%;
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  border: 1px solid rgba(236,230,247,.28);
+  background: rgba(236,230,247,.08);
+
+  color: #faf7fd;
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.purelane-tier__button--primary {
+  background: linear-gradient(
+    135deg,
+    #c9761d,
+    #5d8d1c
+  );
+
+  color: #08211a;
+  border-color: transparent;
+}
+
+.purelane-tier__button:hover {
+  transform: translateY(-2px);
+  background-color: rgba(236,230,247,.16);
+}
+
+@media screen and (max-width: 900px) {
+
+  .purelane-bundles__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .purelane-tier {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .purelane-bundles {
+    padding: 55px 14px;
+  }
+
+  .purelane-bundles__intro {
+    padding: 28px 18px;
+  }
+
+  .purelane-bundles__intro h2 {
+    font-size: 34px;
+  }
+
+  .purelane-tier {
+    padding: 22px 18px;
+  }
+
+}
+
+</style>
+
+
+{% schema %}
+{
+  "name": "Purelane Bundles",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Purelane Bundles"
+    }
+  ]
+}
+{% endschema %}
